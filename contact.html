@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संपर्क - ग्रामपंचायत सिंगणपूर</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=100&h=100&fit=crop" alt="Logo" class="logo">
+                <span class="brand-text">ग्रामपंचायत सिंगणपूर</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">मुख्यपृष्ठ</a></li>
+                <li><a href="about.html">आमच्याबद्दल</a></li>
+                <li><a href="services.html">सेवा</a></li>
+                <li><a href="schemes.html">योजना</a></li>
+                <li><a href="meetings.html">ग्रामसभा</a></li>
+                <li><a href="gallery.html">गॅलरी</a></li>
+                <li><a href="contact.html" class="active">संपर्क</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>संपर्क करा</h1>
+            <p>आम्हाला संपर्क साधा आणि आपली तक्रार नोंदवा</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>तक्रार/सूचना नोंदवा</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">नाव *</label>
+                            <input type="text" id="name" name="name" required placeholder="आपले पूर्ण नाव">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">मोबाईल क्रमांक *</label>
+                            <input type="tel" id="mobile" name="mobile" required placeholder="10 अंकी मोबाईल क्रमांक" pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ई-मेल (पर्यायी)</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="complaint-type">तक्रारीचा प्रकार *</label>
+                            <select id="complaint-type" name="complaint-type" required>
+                                <option value="">निवडा</option>
+                                <option value="water">पाणी पुरवठा</option>
+                                <option value="road">रस्ते दुरुस्ती</option>
+                                <option value="electricity">विद्युत</option>
+                                <option value="sanitation">स्वच्छता</option>
+                                <option value="certificate">प्रमाणपत्र</option>
+                                <option value="tax">कर संबंधित</option>
+                                <option value="other">इतर</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">तपशील *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="आपली तक्रार/सूचना येथे लिहा"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">फोटो अपलोड (पर्यायी)</label>
+                            <input type="file" id="photo" name="photo" accept="image/*">
+                            <small>फक्त JPG, PNG फाईल्स (कमाल 5MB)</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">तक्रार नोंदवा</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2>संपर्क माहिती</h2>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3>पत्ता</h3>
+                                <p>ग्रामपंचायत सिंगणपूर<br>तालुका परभणी, जिल्हा परभणी<br>महाराष्ट्र - 431401</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h3>फोन</h3>
+                                <p>कार्यालय: 02452-XXXXX<br>सरपंच: 98XXXXXXXX<br>ग्रामसेवक: 96XXXXXXXX</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-content">
+                                <h3>ई-मेल</h3>
+                                <p>grampanchayat.singnapur@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-content">
+                                <h3>कार्यालयीन वेळ</h3>
+                                <p>सोमवार - शनिवार<br>सकाळी 10:00 ते सायं 5:00<br>रविवार बंद</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergency-contact">
+                        <h3>आपत्कालीन संपर्क</h3>
+                        <div class="emergency-numbers">
+                            <div class="emergency-item">
+                                <span class="emergency-label">पोलीस:</span>
+                                <span class="emergency-number">100</span>
+                            </div>
+                            <div class="emergency-item">
+                                <span class="emergency-label">अग्निशमन:</span>
+                                <span class="emergency-number">101</span>
+                            </div>
+                            <div class="emergency-item">
+                                <span class="emergency-label">रुग्णवाहिका:</span>
+                                <span class="emergency-number">108</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">आमचे स्थान</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.8947!2d76.7794!3d19.2695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE2JzEwLjIiTiA3NsKwNDYnNDUuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ग्रामपंचायत सिंगणपूर</h3>
+                    <p>तालुका परभणी, जिल्हा परभणी<br>महाराष्ट्र - 431401</p>
+                </div>
+                <div class="footer-section">
+                    <h3>द्रुत दुवे</h3>
+                    <ul>
+                        <li><a href="about.html">आमच्याबद्दल</a></li>
+                        <li><a href="services.html">सेवा</a></li>
+                        <li><a href="contact.html">संपर्क</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>संपर्क माहिती</h3>
+                    <p>फोन: 02452-XXXXX<br>ई-मेल: grampanchayat.singnapur@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ग्रामपंचायत सिंगणपूर | वेबसाइट विकसित: Vertex Institute of Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>गॅलरी - ग्रामपंचायत सिंगणपूर</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://images.unsplash.com/photo-1604357209793-fca5dca89f97?w=100&h=100&fit=crop" alt="Logo" class="logo">
+                <span class="brand-text">ग्रामपंचायत सिंगणपूर</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">मुख्यपृष्ठ</a></li>
+                <li><a href="about.html">आमच्याबद्दल</a></li>
+                <li><a href="services.html">सेवा</a></li>
+                <li><a href="schemes.html">योजना</a></li>
+                <li><a href="meetings.html">ग्रामसभा</a></li>
+                <li><a href="gallery.html" class="active">गॅलरी</a></li>
+                <li><a href="contact.html">संपर्क</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>छायाचित्र गॅलरी</h1>
+            <p>आमच्या गावाच्या आणि कार्यक्रमांच्या छायाचित्रे</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?w=600&h=400&fit=crop" alt="गाव दृश्य">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">गाव दृश्य</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop" alt="शेती">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">शेती</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=600&h=400&fit=crop" alt="ग्रामसभा बैठक">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">ग्रामसभा बैठक</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1581090700227-1b1a1a09a5f7?w=600&h=400&fit=crop" alt="स्वच्छता अभियान">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">स्वच्छता अभियान</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1581091215367-59ab6e92f373?w=600&h=400&fit=crop" alt="ग्रामपंचायत कार्यालय">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">ग्रामपंचायत कार्यालय</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&h=400&fit=crop" alt="शाळा">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">शाळा</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=600&h=400&fit=crop" alt="आरोग्य शिबीर">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">आरोग्य शिबीर</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="महिला स्वसहाय्य गट">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">महिला स्वसहाय्य गट</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&h=400&fit=crop" alt="रस्ते बांधकाम">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">रस्ते बांधकाम</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&h=400&fit=crop" alt="पाणी पुरवठा">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">पाणी पुरवठा</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=400&fit=crop" alt="सांस्कृतिक कार्यक्रम">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">सांस्कृतिक कार्यक्रम</div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&h=400&fit=crop" alt="वृक्षारोपण">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">वृक्षारोपण</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+            <img id="lightbox-img" src="/placeholder.svg" alt="">
+            <button class="lightbox-next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ग्रामपंचायत सिंगणपूर</h3>
+                    <p>तालुका परभणी, जिल्हा परभणी<br>महाराष्ट्र - 431401</p>
+                </div>
+                <div class="footer-section">
+                    <h3>द्रुत दुवे</h3>
+                    <ul>
+                        <li><a href="about.html">आमच्याबद्दल</a></li>
+                        <li><a href="services.html">सेवा</a></li>
+                        <li><a href="contact.html">संपर्क</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>संपर्क माहिती</h3>
+                    <p>फोन: 02452-XXXXX<br>ई-मेल: grampanchayat.singnapur@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ग्रामपंचायत सिंगणपूर | वेबसाइट विकसित: Vertex Institute of Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
